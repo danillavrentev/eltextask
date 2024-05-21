@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <title>Генератор строк</title>
+  </head>
+  <body>
+    <h1>Генератор строк</h1>
+    <form id="inputForm">
+      <label for="lengthInput">Введите число N:</label>
+      <input
+        type="number"
+        id="lengthInput"
+        name="lengthInput"
+        required
+      /><br /><br />
+      <label for="firstCharInput"
+        >Введите первый символ для замены всех букв:</label
+      >
+      <input
+        type="text"
+        id="firstCharInput"
+        name="firstCharInput"
+        maxlength="1"
+        required
+      /><br /><br />
+      <label for="secondCharInput"
+        >Введите второй символ для замены всех цифр:</label
+      >
+      <input
+        type="text"
+        id="secondCharInput"
+        name="secondCharInput"
+        maxlength="1"
+        required
+      /><br /><br />
+      <button type="button" onclick="generateAndProcessString()">
+        Создать
+      </button>
+    </form>
+
+    <h2>Результаты</h2>
+    <p id="generatedString"></p>
+    <p id="step2String"></p>
+    <p id="finalString"></p>
+    <p id="firstCharCount"></p>
+    <p id="secondCharCount"></p>
+    <p id="unchangedCount"></p>
+  </body>
+</html>
